@@ -12,10 +12,12 @@ const Navbar = () => {
   };
 
   const Li = ({ text }: ListElementType) => {
+    const href = text.split(" ")[0];
+
     return (
       <li>
         <a
-          href={`#${text.toLowerCase()}`}
+          href={`#${href.toLowerCase()}`}
           onClick={handleToggle}
           className="block py-2 pl-3 pr-4 text-lg md:text-base text-gray-700 rounded-xl hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
           {text}
@@ -27,7 +29,7 @@ const Navbar = () => {
   return (
     <nav className="p-3 border-gray-200 rounded-2xl bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           {/* <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-6 mr-3 sm:h-10"

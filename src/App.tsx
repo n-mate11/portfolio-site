@@ -1,6 +1,6 @@
 import tangle from "./assets/tangleoffline.png";
 import kamillaoptika from "./assets/kamillaoptika.png";
-import portrait from "./assets/portrait.jpg";
+import portrait from "./assets/me.jpeg";
 
 import Project from "./components/Project";
 import Navbar from "./components/Navbar";
@@ -72,16 +72,20 @@ function App() {
           I am currently not looking for a new role, however, feel free to reach
           out to me.
         </p>
-        <button className="leading-1 rounded-full px-10 py-4 my-8 text-xl bg-gradient-to-r from-[#b0f3f1] to-[#ffcfdf] tracking-wide shadow-xs hover:shadow-2xl active:shadow-xl transform hover:-translate-y-1 active:translate-y-0 transition duration-200">
+        <a
+          href="mailto:n.mate.peter@gmail.com"
+          className="leading-1 rounded-full px-10 py-4 my-8 text-xl bg-gradient-to-r from-[#b0f3f1] to-[#ffcfdf] tracking-wide shadow-xs hover:shadow-2xl active:shadow-xl transform hover:-translate-y-1 active:translate-y-0 transition duration-200">
           Send me an email
-        </button>
+        </a>
         <div className="flex my-8">
-          <button className="mx-8">
+          <a
+            href="https://www.linkedin.com/in/mate-nagy-356508222/"
+            className="mx-8">
             <FaLinkedin color="#fff" size={"2em"} />
-          </button>
-          <button className="mx-8">
+          </a>
+          <a href="https://github.com/n-mate11" className="mx-8">
             <FaGithub color="#fff" size={"2em"} />
-          </button>
+          </a>
         </div>
         <p className="mb-4">Designed and Developed by Máté Nagy</p>
       </section>
